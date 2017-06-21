@@ -1,0 +1,1393 @@
+@font-face
+{
+	font-family: titilliumReg;
+	src: url(fonts/TitilliumWeb-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: titilliumBold;
+	src: url(fonts/TitilliumWeb-Bold.ttf);
+}
+
+body{
+	margin: 0px;
+	background-color: #0f0f10;
+}
+
+html
+{
+	overflow-y: scroll;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.95);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(1, 1, 1, 0.8);
+	-webkit-box-shadow: inset 0 0 6px rgba(8, 8, 9, 0.49);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(16, 16, 16, 0.4);
+}
+
+
+
+#navi{
+	opacity: 0.85;
+	margin-top: 0;
+    padding-left: 10%;
+    padding-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 0px;
+    width: 75%;
+	background-color: #070707;
+	overflow: hidden;
+	height: 35px;
+}
+
+#navi li  #lo{
+	width: 30px;
+	height: 25px;
+}
+
+#navSubmit{position: absolute; left: -9999px; width: 1px; height: 1px;}
+
+li {
+    display: inline;
+}
+
+#nothing
+{
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	font-family: titilliumReg;
+}
+
+#username, #logout, #navSearch{
+	padding: 5px;
+	float: right;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: titilliumReg;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#username{
+    cursor: pointer;
+	font-weight: bold;
+}
+
+#navSearch{
+	padding-top: 2px;
+	padding-bottom: 6px;
+	padding-left: 5px;
+	padding-right: 7px;
+	color: white;
+	border-radius: 12px;
+	border-color: #1a1a1a;
+	background: #080808;
+	margin-top: 3px;
+	width: 75px;
+	height: 30px;
+	outline: none;
+	font-size: 14px;
+}
+
+#container{
+	margin-left: 12.5%;
+	margin-right: 15%;
+	position: relative;
+}
+
+#rightside{
+	padding-top: 20px;
+	padding-right: 40%;
+}
+
+#postaPost{
+	padding: 13px;
+	background-color: #1a1a1a;
+	padding-bottom: 45px;
+	margin-bottom: 15px;
+	border-radius: 2%;
+	box-shadow: 1px 1px 1px black;
+}
+
+#postTitle p{
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: titilliumReg;
+	margin: 0px;
+}
+
+#postTitle #tier{
+	color: pink;
+	opacity: 0.8;
+	text-decoration: italic;
+}
+
+#postInput{
+	padding-left: 10%;
+	padding-right: 8%;
+}
+
+#postInput textarea{
+	resize: none;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0);
+	color: white;
+	font-family: titilliumReg;
+	border: 3px solid;
+	outline: none;
+	margin-bottom: 2.5px;
+	padding: 8px;
+	font-size: 16px;
+	border-width: 0px;
+	border-bottom-width: 2px;
+	border-bottom-color: dimgray;
+}
+
+
+#postSubmit{position: relative; padding-right: 8%;}
+
+.confButt
+{
+	text-align: center;
+	border-radius: 5px;
+	font-family: titilliumBold;
+	box-shadow: 1px 1px black;
+}
+
+#postSubmit input, #teamSubmit input, #JoinTeam p{
+	margin-top: 5px;
+	float: right;
+	border-radius: 5px;
+	font-family: titilliumBold;
+	box-shadow: 1px 1px black;
+	cursor: pointer;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: white;
+	outline: none;
+}
+
+#postSubmit input:hover, #teamSubmit input:hover{
+	text-shadow: .5px #1a1a1a;
+}
+
+#leftside{
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 25%;
+	box-shadow: 1px 1px 1px black;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	background-color: #1a1a1a;
+	border-radius: 5%;
+}
+
+#teams{
+	margin-bottom: 20px;
+}
+
+.pangalanNgTeam{
+	margin-top: 5px;
+}
+
+.teamName p{
+	margin: 0px;
+	font-family: titilliumReg; 
+	color: white; 
+	text-align: right;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.teamName p:hover{
+	font-size: 14.5px;
+	font-weight: bold;
+	background-color: #1a1a1a;
+}
+
+#leftTitle p{
+	font-weight: bold;
+	font-family: titilliumReg;
+	color: white; 
+	text-align: right;
+	margin: 0px;
+	font-size: 25px;
+}
+
+#yourTeams{margin-top: 10px;}
+
+
+#LPTitle p, #yourTeams p{
+	font-family: titilliumReg;
+	font-style: italic;
+	font-weight: bold;
+	color: white; 
+	text-align: right;
+	margin: 0px;
+	font-size: 16px;
+}
+
+#joinaTeam{margin-top: 7.5px;}
+
+#joinaTeam p, #loadmore p{
+	font-family: titilliumReg;
+	color: white;
+	text-align: right;
+	margin: 0px;
+	font-size: 13px;
+	cursor: pointer;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#joinaTeam p:hover, #loadmore p:hover, #admin:hover
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.post{
+	padding: 20px;
+	background-color: #1a1a1a;
+	overflow: hidden;
+	box-shadow: 1px 1px 1px black;
+	border-radius: 7px;
+	margin: 10px 10px;
+}
+
+.topPost p{
+	display: inline;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: titilliumReg;
+	color: white;
+}
+
+.trash{
+    cursor: pointer;
+	float:right;
+	height: 15px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.topPost #PostTime{
+	float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	padding-right: 5px;
+	font-style: italic;
+}
+
+#PostUserName
+{
+	position: absolute;
+	cursor: pointer;
+	padding-left: 5px;
+	font-weight: bold;
+	margin-top: -35px;
+	margin-left: 45px;
+}
+
+.topPost #PostUserName{
+	display: block;
+	cursor: pointer;
+	padding-left: 5px;
+	font-weight: bold;
+}
+
+.midPost{
+	font-size: 20px;
+	font-family: titilliumReg;
+	color: white;
+}
+
+.midPost p{
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.midPost img{
+	max-width: 85%;
+    height: auto;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.botPost{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.botPost li{
+	display: inline;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: titilliumReg;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: right;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.botPost li:hover{font-size:14.5px;}
+
+.CommentSection{
+	border-top: 1.25px solid #bfbfbf;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.CommentProper{margin-top: 10px; margin-bottom: 10px;}
+
+.CommentProper p{
+	display: inline;
+	font-size: 14px;
+	font-family: titilliumReg;
+	color: white;
+}
+
+.CommentUsername, .PinakaComment{display: inline;}
+
+.CommentUsername{font-weight: bold; font-style: italic; cursor: pointer;}
+
+.PinakaComment{padding-left: 4px;}
+
+.midPost iframe{width: 85%; height: 400px;
+	padding-right: 10%;
+	padding-left: 10%;}
+	
+#createTeam, #LPInfo{
+	display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 450px;
+    height: 474px;
+    margin: auto;
+    background-color: #1a1a1a;
+	color: white;
+	padding: 20px;
+	box-shadow: 2px 2px 2px 2px black;
+	display: none;
+	border-radius: 5px;
+}
+
+#LPInfo{
+	height: 350px;
+	border-radius: 10px;
+}
+
+#LPInfoMid{padding: 5px;}
+
+#LPInfoMidTitle p{
+	font-family: titilliumReg; 
+	font-size: 18px;
+	margin: 0px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#LPInfoMidInfo{
+	height: 200px;
+	padding-left: 15px;
+	overflow-y: scroll;
+	border: 3px solid white;
+}
+
+#LPInfoMidInfo p{
+	font-family: titilliumReg; 
+	font-size: 16px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+#createTeamTop, #LPInfoTop{padding-left: 10px; padding-top: 5px; border-bottom: 3px solid white;}
+
+#createTeamTop p, #LPInfoTop p{
+	font-family: titilliumBold;
+	margin: 0px;
+	font-size: 24px;
+}
+
+#createTeamName{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#createTeamName label{
+	font-family: titilliumReg; 
+	font-size: 16px;
+}
+
+#createTeamName input{
+	margin-left: 10px;
+	border-radius: 7.5px;
+	color: white; 
+	border-color: white;
+	background: transparent;
+	outline: none;
+	font-size: 14px;
+	padding: 5px;
+	width: 300px;
+}
+
+#createTeamMembers{
+	padding-left: 50px;
+	padding-right: 20px;
+}
+
+#createTeamMembers p{
+	font-family: titilliumBold;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#teamFriends{
+	height: 250px;
+	width: 328px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid white;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#teamFriends p{
+	font-family: titilliumReg;
+	display: inline;
+	font-size: 16px;
+}
+
+#teamSubmit, #JoinTeam{
+	margin-top: 15px;
+	padding-right: 30px;
+}
+
+#JoinTeam{color: #1a1a1a; }
+
+.deleteconfirmation
+{
+	text-align: center;
+	position: inherit;
+	background: rgba(0, 0, 0, 0.95);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 6px;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 15px;
+	padding-bottom: 24px;
+	display: none;
+	opacity: 0.85;
+}
+
+.img-circle
+{
+	border-radius: 50%;
+	height: 40px;
+}
+
+.exit{
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	font-family: titilliumReg;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.userprofile
+{
+    position: fixed;
+    left: 15%;
+    right: 20%;
+    background-color: #0e0e0e;
+    top:15%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    display:none;
+}
+
+.dpholder
+{
+    border-radius: 10px;
+}
+
+.userprofileimg
+{
+    height: 225px;
+    width: 225px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.addfriend
+{
+    top: 22%;
+    position:absolute;
+    height:30px;
+    cursor: pointer;
+}
+
+.profileusername
+{
+    position: absolute;
+    font-family: titilliumReg;
+    color: white;
+    font-size: 3em;
+    left: 27.5%;
+    top: -14%;
+}
+
+.dota2logo, .owlogo
+{
+    position: absolute;
+    height: 50px;
+}
+
+.dota2logosasearch, .owlogosasearch
+{
+	height: 75px;
+}
+
+.dota2logo
+{
+    top: 73%;
+}
+
+.owlogo
+{
+    top: 47%;
+    opacity: 0.85;
+
+}
+/**-webkit-filter:brightness(25%); To dim things**/
+.x
+{
+    position: absolute;
+    font-family: titilliumReg;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    right: 2%;
+    top: -10%;
+}
+
+.heropic
+{
+    height: 35px;
+    margin-left: 8px;
+    border-radius: 20px;
+}
+
+.owdetailspace
+{
+    top: 45%;
+    left: 30%;
+}
+
+.dotadetailspace
+{
+    top: 71%;
+    left: 30%;
+}
+
+.owrole
+{
+    color:white;
+    position: absolute;
+    font-family: titilliumReg;
+    font-size: 1.7em;
+    top:-50%;
+    right: -40%;
+}
+
+.mmr
+{
+	color: white;
+	position: absolute;
+	top: -50%;
+	left: 275px;
+	width: 500px;
+	font-family: titilliumReg;
+	font-size: 1.7em;
+}
+
+.dotadetailspace, .owdetailspace
+{
+    list-style: none;
+    position: absolute;
+}
+#imgform
+{
+	position: absolute;
+	top: 67%;
+	left: 3%;
+	background-color: black;
+	padding: 10px;
+	padding-bottom: 34px;
+	opacity: 0.85;
+	border-radius: 15px;
+}
+
+#chgd
+{
+	position: absolute;
+	top: 54%;
+	left: 40%;
+}
+
+#submitimg
+{
+	position: absolute;
+	margin-top: 5px;
+}
+
+#uploadimg
+{
+	font-family: titilliumReg;
+	color: white;
+	width: 178px;
+}
+
+.arrow
+{
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-right: 5px;
+	height: 40px;
+	padding-left: 5px;
+}
+
+.notifications
+{
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: black;
+	position: fixed;
+	top: 20%;
+	cursor: pointer;
+}
+
+.notifproper
+{
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: black;
+	position: fixed;
+	top: 20%;
+	width: 250px;
+	height: 400px;
+}
+
+.wordnotication
+{
+	font-family: titilliumBold;
+	font-style: italic;
+	color: white;
+	font-size: 1.5em;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+
+.searchBoxX
+{
+	left: 95%;
+	position: absolute;
+	font-family: titilliumReg;
+	color: white;
+	font-size: 2em;
+	cursor: pointer;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.notifX
+{
+	top: 0%;
+	left: 91%;
+	position: absolute;
+	font-family: titilliumReg;
+	color: white;
+	font-size: 2em;
+	cursor: pointer;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.notificationarea
+{
+	overflow-x: hidden;
+	height: 350px;
+	background-color: rgb(10, 10, 10);
+	overflow-y: scroll;
+}
+
+.notif
+{
+	border-right-style: hidden;
+	border-bottom-style: solid;
+	width: 238px;
+	height: 75px;
+	border-width: 2px;
+}
+
+.imagecontainer
+{
+	padding-top: 17px;
+	padding-left: 13px;
+}
+
+.notifHeader
+{
+	cursor: pointer;
+	position: relative;
+	color: white;
+	top: -63px;
+	left: 62px;
+	font-family: titilliumBold;
+}
+
+.notifBody
+{
+	top: -80px;
+	left: 62px;
+	position: relative;
+	color: white;
+	font-family: titilliumReg;
+}
+
+.notifConf
+{
+	top: -91px;
+	left: 62px;
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 10px;
+	font-family: titilliumBold;
+	box-shadow: 1px 1px black;
+}
+
+.searchBox
+{
+	position: fixed;
+	width: 500px;
+	height: 500px;
+	top: 75px;
+	left: 30%;
+	background-color: #080808;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px black;
+}
+
+.searchResult
+{
+	border-bottom-style: solid;
+	border-color: black;
+	height: 75px;
+}
+
+.searchResultArea
+{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 225px;
+	background-color: rgb(12, 12, 12);
+	top: 0;
+}
+
+.searchHead
+{
+	font-family: titilliumBold;
+	color: white;
+	font-size: 2.5em;
+	margin-bottom: 5px;
+	margin-top: 0;
+	margin-left: 42%;
+}
+
+.searchByUsername
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 10px;
+	color: white;
+	border-radius: 12px;
+	border-color: #1a1a1a;
+	background: #080808;
+	margin-left: 105px;
+	margin-bottom: 10px;
+	margin-top: -5px;
+	width: 185px;
+	height: 30px;
+	outline: none;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: titilliumReg;
+}
+
+.searchbutt
+{
+	text-align: center;
+	border-radius: 5px;
+	font-family: titilliumBold;
+	box-shadow: 1px 1px black;
+	margin-left: 12px;
+}
+
+.buttonTable
+{
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+td.charot
+{
+	width: 140px;
+}
+
+select.dropdownlist
+{
+	width: 70%;
+	margin-left: 10px;
+	margin-top: -5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: rgb(12, 12, 12);
+	border-color: black;
+	font-size: 1.5em;
+	color: #eff0f2;
+	font-family: titilliumReg, serif;
+}
+
+.searchedUser
+{
+	cursor: pointer;
+	position: relative;
+	color: white;
+	top: -38px;
+	left: 65px;
+	font-size: 1.5em;
+	display: inline;
+	font-family: titilliumBold;
+}
+
+#wordPare
+{
+	font-family: titilliumReg;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 1em;
+}
+
+#addedchuchu
+{
+	position: fixed;
+	top: 122px;
+	left: 488px;
+	border-radius: 5px;
+	background-color: black;
+	opacity: 0.65;
+}
+
+#teamNameError
+{
+	position: absolute;
+	top: 95px;
+	left: 123px;
+	font-family: titilliumReg;
+	color: white;
+	font-size: 1em;
+	background-color: black;
+	opacity: 0.50;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.teampopup
+{
+	position: fixed;
+	left: 15%;
+	right: 20%;
+	background-color: #0e0e0e;
+	top:10%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px black;
+}
+
+.teamMembers
+{
+	position: relative;
+	overflow-x: hidden;
+	height: 350px;
+	background-color: rgb(10, 10, 10);
+	overflow-y: scroll;
+	top:10%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#teamName
+{
+	display: block;
+	position: relative;
+	font-family: titilliumReg;
+	color: white;
+	font-size: 3em;
+	left: 3.5%;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	width: 450px;
+}
+
+#admin
+{
+	display: inline;
+	position: relative;
+	font-family: titilliumReg;
+	font-style: italic;
+	color: white;
+	font-size: 1.5em;
+	left: 3.5%;
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+.teamx
+{
+	position: absolute;
+	font-family: titilliumReg;
+	color: white;
+	font-size: 2em;
+	cursor: pointer;
+	right: 2%;
+	top: -4%;
+}
+
+#labelTeamMembers
+{
+	position: relative;
+	font-family: titilliumReg;
+	color: white;
+	font-size: 2em;
+	margin-bottom: 5px;
+	margin-top: 2px;
+	margin-left: 39%;
+}
+
+.overwatchlogochuchu
+{
+	position: relative;
+	top: -32px;
+	left: 170px;
+}
+
+.dota2logochuchu
+{
+	position: relative;
+	top: -32px;
+	left: 325px;
+}
+
+.overwatchlogochuchu, .dota2logochuchu
+{
+	height: 25px;
+	width: 25px;
+}
+
+.teamRole
+{
+	display: inline;
+	position: relative;
+	font-family: titilliumReg;
+	font-size: 1.2em;
+	color: white;
+}
+
+#owTeamRole
+{
+	top: -39px;
+	left: 175px;
+}
+
+#dotaTeamRole
+{
+	top: -40px;
+	left: 328px;
+}
+
+.member
+{
+	cursor: pointer;
+	position: relative;
+	color: white;
+	top: -38px;
+	left: 65px;
+	font-size: 1.5em;
+	display: inline;
+	font-family: titilliumBold;
+}
+
+.wordChat
+{
+	font-family: titilliumReg;
+	color: white;
+	font-size: 1.5em;
+	margin: 5px;
+}
+.chatChuchu
+{
+	margin: 0;
+	margin-bottom: -250px;
+	position: fixed;
+	bottom: 0;
+	right: 5%;
+	width: 250px;
+	background-color: black;
+	border-bottom: 0;
+	border-style: solid;
+	border-top-width: medium;
+	border-left-width: medium;
+	border-right-width: medium;
+	border-color: #08080a;
+}
+
+.usersChat
+{
+	position: relative;
+	overflow-x: hidden;
+	height: 250px;
+	background-color: rgb(10, 10, 10);
+	overflow-y: scroll;
+	top:10%;
+}
+
+.imagecontainerSACHAT
+{
+	padding-top: 9px;
+	padding-left: 13px;
+}
+
+.searchResultSACHAT
+{
+	border-bottom-style: solid;
+	border-color: black;
+	height: 45px;
+}
+
+.img-circleSACHAT
+{
+	border-radius: 50%;
+	height: 25px;
+}
+
+.searchedUserSACHAT
+{
+	cursor: pointer;
+	position: relative;
+	color: white;
+	top: -26px;
+	left: 45px;
+	font-size: 1em;
+	display: inline;
+	font-family: titilliumBold;
+}
+
+.chat
+{
+	margin: 0;
+	margin-bottom: -225px;
+	position: fixed;
+	bottom: 0;
+	right: 26%;
+	width: 200px;
+	background-color: black;
+	border-bottom: 0;
+	border-style: solid;
+	border-top-width: medium;
+	border-left-width: medium;
+	border-right-width: medium;
+	border-color: #08080a;
+}
+
+.chatUsername
+{
+	font-family: titilliumReg;
+	color: white;
+	font-size: 1.3em;
+	margin: 5px;
+}
+
+.chatArea
+{
+	display: flex;
+	flex-direction: column-reverse;
+	width: 200px;
+	position: relative;
+	overflow-x: hidden;
+	height: 200px;
+	background-color: rgb(10, 10, 10);
+	overflow-y: scroll;
+	top:10%;
+	vertical-align: bottom;
+}
+
+.receivedMessage
+{
+	padding-right: 10px;
+	width: auto;
+	display: inline-block;
+	font-family: titilliumReg;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	font-size: 1em;
+	background-color: #151515;
+	word-wrap: break-word;
+}
+
+.sentMessage
+{
+	padding-left: 5px;
+	padding-right: 10px;
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	width: auto;
+	font-family: titilliumReg;
+	color: white;
+	font-size: 1em;
+	background-color: #0b0b0b;
+	word-wrap: break-word;
+}
+
+.chatInput
+{
+	font-family: titilliumReg;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 25px;
+	border-width: 0;
+	color: white;
+	background-color: black;
+	width: 190px;
+	outline-width: 0;
+}
+
+.rating
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: white;
+	font-family: titilliumReg;
+	font-style: italic;
+	font-size: 1em;
+}
+
+.star
+{
+	height: 20px;
+	cursor: pointer;
+}
+
+.botPostWha
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.reportButton
+{
+	height: 25px;
+	position: fixed;
+	cursor: pointer;
+	top: 300px;
+	left: 225px;
+}
+
+.imagecontainerComment
+{
+	padding-top: 9px;
+	padding-left: 13px;
+}
+
+.img-circleComment
+{
+	border-radius: 50%;
+	height: 25px;
+}
+
+.usernameComment
+{
+	cursor: pointer;
+	position: relative;
+	color: white;
+	top: -26px;
+	left: 45px;
+	font-size: 1em;
+	display: inline;
+	font-family: titilliumBold;
+}
+
+.commentContent
+{
+	position: relative;
+	color: white;
+	top: 0px;
+	left: 0px;
+	border-bottom: 10px;
+	margin-left: 10px;
+	font-size: 1.3em;
+	display: inline;
+	font-family: titilliumReg;
+	word-wrap: break-word;
+}
+
+.commentDiv
+{
+	border-color: #222222;
+	border-top-style: solid;
+	border-width: thick;
+}
+
+.commentBox
+{
+	padding-bottom: 10px;
+	border-bottom-style: solid;
+	border-color: #222222;
+	height: auto;
+	border-width: thin;
+}
+
+.commentInput
+{
+	word-wrap: break-word;
+	font-family: titilliumReg;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: auto;
+	width: 500px;
+	border-width: 0;
+	color: white;
+	background-color: #1a1a1a;
+	outline-width: 0;
+}
+
+.teamInviteButton
+{
+	cursor: pointer;
+	position: absolute;
+	height: 30px;
+	top: 10px;
+	right: 45px;
+	-webkit-filter: invert(100%);
+}
+
+#inviteTo
+{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 450px;
+	height: 395px;
+	margin: auto;
+	background-color: #1a1a1a;
+	color: white;
+	padding: 20px;
+	box-shadow: 2px 2px 2px 2px black;
+	border-radius: 5px;
+}
+
+.exitTeamInvite
+{
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	font-family: titilliumReg;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#teamsInvite{
+	height: 250px;
+	width: 328px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid white;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#teamsInvite p
+{
+	font-family: titilliumReg;
+	display: inline;
+	font-size: 16px;
+}
+
+#submitInvite input
+{
+	margin-top: 5px;
+	float: right;
+	border-radius: 5px;
+	font-family: titilliumBold;
+	box-shadow: 1px 1px black;
+	cursor: pointer;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: white;
+	outline: none;
+}

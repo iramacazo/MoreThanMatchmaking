@@ -1,0 +1,304 @@
+* {
+	outline: none;
+}
+
+#header {
+	background-color: #070707;
+	padding-left: 10%;
+    padding-right: 15%;
+	opacity: 0.85;
+	height: 35px;
+}
+
+.navText
+{
+    padding: 5px;
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:TR;
+}
+
+body {
+	overflow: auto;
+	height: 100%;
+	margin: 0px;
+	background-color: #0f0f10;
+	min-width: 900px;
+}
+
+div.choose {
+	width: 700px;
+	background-color: #1a1a1a;
+	margin: auto;
+	text-align: center;
+	border: solid 3px black;
+	border-radius: 10px;
+
+}
+
+
+.logo {
+	width: 200px;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+
+div#heading {
+	margin: auto;
+	text-align: center;
+}
+
+div#heading h1 {
+	font-family: TR;
+	color: white;
+	font-weight: normal;
+	font-size: 2.2em;
+}
+
+@font-face {
+	font-family: TR;
+	src: url(fonts/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+	font-family: dota2font;
+	src: url(fonts/TrajanPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: owfont;
+	src: url(fonts/overwatch.ttf);
+}
+
+div#game {
+	margin: auto;
+	text-align: center;
+}
+
+div#game h1 {
+	font-family: owfont;
+	color: white;
+	font-size: 3em;
+	display: none;
+	font-weight: normal;
+}
+
+div.dota  {
+	box-shadow: 2px 2px 2px 2px #6d0505;
+	width: 600px;
+	position: absolute;
+	left: 28.5%;
+	top: 15%;
+	text-align: center;
+	background-color: #1a1a1a;
+	border-radius: 10px;
+}
+
+div.dota h1 {
+	color: white;
+	font-family: TR;
+}
+
+ul#roles {
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+ul#roles li:hover {
+	background-color: #6d0505;
+	
+}
+ul#roles h2 {
+	font-size: 1.1em;
+	font-weight: normal;
+	color: white;
+	font-family: TR;
+	margin-left: 5px;
+}
+
+ul#roles li {
+	padding: 1px 1px 1px 1px;
+	cursor: pointer;
+}
+
+div.pos {
+	display: none;
+}
+
+div.heroes {
+	display: none;
+}
+
+div.mmr {
+	display: none;
+}
+
+select.h1, select.h2, select.h3
+{
+	width: 70%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #262221;
+	font-size: 1.5em;
+	color: #eff0f2;
+	font-family: TR;
+}
+
+#forButton input{
+	font-size: 1.5em;
+	font-family: TR;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #6d0505;
+	border: none;
+	color: #eff0f2;
+	box-shadow: 1px 1px 1px 1px black;
+	cursor: pointer;
+}
+
+div.mmr #mmrfield {
+	width: 40%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #262221;
+	font-size: 1.2em;
+	color: #eff0f2;
+	font-family: TR;
+	text-align: center;
+}
+
+div#done #btnMMR {
+	font-size: 1.5em;
+	font-family: TR;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #6d0505;
+	border: none;
+	color: #eff0f2;
+	box-shadow: 1px 1px 1px 1px black;
+	cursor: pointer;
+}
+
+div#finish {
+	background-color: #070605;
+	width: 99.88%;
+	height: 200px;
+	position: absolute;
+	top: 30%;
+	text-align: center;
+	display: none;
+}
+
+div#finish h1 {
+	font-weight: normal;
+	font-family: TR;
+	color : #eff0f2;
+	margin-top: 50px;
+}
+
+div#finish input {
+	border: none;
+	font-size: 1.5em;
+	width: 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: TR;
+}
+
+div.step1 {
+	display: none;
+}
+
+div.overwatch {
+	box-shadow: 2px 2px 2px 2px #eda200;
+	width: 600px;
+	position: absolute;
+	left: 28.5%;
+	top: 15%;
+	text-align: center;
+	background-color: #1a1a1a;
+	border-radius: 10px;
+}
+
+div.overwatch h1 {
+	color: white;
+	font-family: TR;
+}
+
+ul#rolesOW {
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+ul#rolesOW li:hover {
+	background-color: #eda200;
+	
+}
+
+ul#rolesOW li {
+	padding: 1px 1px 1px 1px;
+	cursor: pointer;
+}
+
+ul#rolesOW h2 {
+	font-size: 1.1em;
+	font-weight: normal;
+	color: white;
+	font-family: TR;
+	margin-left: 5px;
+}
+
+div.heroesOW {
+	display: none;
+}
+
+select.owh1, select.owh2, select.owh3 {
+	width: 70%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #262221;
+	font-size: 1.5em;
+	color: #eff0f2;
+	font-family: TR;
+}
+
+#forButtonOW input {
+	font-size: 1.5em;
+	font-family: TR;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #eda200;
+	border: none;
+	color: #eff0f2;
+	box-shadow: 1px 1px 1px 1px black;
+	cursor: pointer;
+}
+
+div.ranktier {
+	display: none;
+	height: 390px;
+}
+
+div.ranktier img {
+	width: 100px;
+	cursor: pointer;
+}
+
+div.ranktier #notier {
+	border: solid 2px black;
+	font-family: TR;
+	font-size: 1.2em;
+	border-radius: 5px;
+	color: white;
+	background-color: #eda200;
+	display: block;
+	cursor: pointer;
+	margin: auto;
+}
